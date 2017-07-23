@@ -1,0 +1,12 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+contact:
+    path:     /contact
+    defaults: { _controller: AppBundle:Contact:contact }
+product:
+    path:     /product
+    defaults: { _controller: AppBundle:Product:product }
+app_product:
+    resource: '@AppBundle/Resources/config/routing/product.yml'
+    prefix: /products
